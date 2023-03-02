@@ -1,0 +1,76 @@
+GET http://localhost:8080/contacts
+# the request above returns a json object with all contacts data for mongodb database. No database is connected.
+
+###
+GET http://localhost:8080/contacts/63fd55e7498e0e699817d85d
+# the request above returns a json object with a single contact data for mongodb database. No database is connected.
+
+###
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+
+{
+    "firstName": "Rony",
+    "lastName": "Mondal",
+    "email": "rony@email.com",
+    "favoritecolor": "red",
+    "birthdate": "1990-01-01"
+}
+
+# the request above creates a json object with a single contact data for mongodb database. No database is connected.
+###
+PUT http://localhost:8080/contacts/64001158865b9c67796c730c HTTP/1.1 content-type: application/json
+
+{
+    "firstName": "Rony Nickson",
+    "lastName": "Mondal",
+    "email": "ronyn@email.com",
+    "favoritecolor": "black",
+    "birthdate": "1990-04-03"
+}
+
+# the request above updates a json object with a single contact data for mongodb database. No database is connected.
+
+###
+DELETE http://localhost:8080/contacts/64001158865b9c67796c730c HTTP/1.1
+
+# the request above deletes a json object with a single contact data for mongodb database. No database is connected.
+
+###
+GET https://one-x2ek.onrender.com/contacts
+# the request above returns a json object with all contacts data for mongodb database. Database is connected.
+
+###
+GET https://one-x2ek.onrender.com/contacts/63fd55e7498e0e699817d85d
+# the request above returns a json object with a single contact data for mongodb database. Database is connected.
+
+###
+POST https://one-x2ek.onrender.com/contacts HTTP1.1 content-type: application/json
+{
+    "firstName": "Rony",
+    "lastName": "Mondal",
+    "email": "rony@email.com",
+    "favoritecolor": "red",
+    "birthdate": "1990-01-01"
+}
+
+# the request above creates a json object with a single contact data for mongodb database. Database is connected.
+
+###
+PUT https://one-x2ek.onrender.com/contacts/ HTTP1.1 content-type: application/json
+{
+    "firstName": "Rony Nickson",
+    "lastName": "Mondal",
+    "email": "ronyn@email.com",
+    "favoritecolor": "black",
+    "birthdate": "1990-04-03"
+}
+
+# the request above updates a json object with a single contact data for mongodb database. Database is connected.
+
+###
+DELETE https://one-x2ek.onrender.com/contacts/ HTTP1.1 
+# the request above deletes a json object with a single contact data for mongodb database. Database is connected.
+
+
+
+
