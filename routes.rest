@@ -12,20 +12,20 @@ POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
     "firstName": "Rony",
     "lastName": "Mondal",
     "email": "rony@email.com",
-    "favoritecolor": "red",
-    "birthdate": "1990-01-01"
+    "favoriteColor": "red",
+    "birthday": "1990-01-01"
 }
 
 # the request above creates a json object with a single contact data for mongodb database. No database is connected.
 ###
-PUT http://localhost:8080/contacts/6400191c5671f6eee813dfa1 HTTP/1.1 content-type: application/json
+PUT http://localhost:8080/contacts/640228b46a09e532e3c1df8e HTTP/1.1 content-type: application/json
 
 {
     "firstName": "Rony Nickson",
     "lastName": "Mondal",
     "email": "ronyn@email.com",
-    "favoritecolor": "black",
-    "birthdate": "1990-04-03"
+    "favoriteColor": "red",
+    "birthday": "1990-01-01"
 }
 
 # the request above updates a json object with a single contact data for mongodb database. No database is connected.
@@ -51,7 +51,7 @@ POST https://cse-341-lesson-3.onrender.com/contacts HTTP/1.1 content-type: appli
     "lastName": "Mondal",
     "email": "rony@email.com",
     "favoritecolor": "red",
-    "birthdate": "1990-01-01"
+    "birthday": "1990-01-01"
 }
 
 # the request above creates a json object with a single contact data for mongodb database. Database is connected.
@@ -64,7 +64,7 @@ PUT https://cse-341-lesson-3.onrender.com/contacts/64001ca3e41ebe86cfa2823a HTTP
     "lastName": "Mondal",
     "email": "ronyn@email.com",
     "favoritecolor": "black",
-    "birthdate": "1990-04-03"
+    "birthday": "1990-04-03"
 }
 
 # the request above updates a json object with a single contact data for mongodb database. Database is connected.
