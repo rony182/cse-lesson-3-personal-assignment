@@ -8,7 +8,7 @@
   "host": "cse-341-lesson-3.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts/": {

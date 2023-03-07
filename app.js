@@ -19,7 +19,7 @@ app
       "Access-Control-Allow-Methods",
       "GET, POST, PUT, DELETE, OPTIONS"
     );
-    res.setHeader("Content-Type", "application/json");
+    // res.setHeader("Content-Type", "application/json");
     next();
   })
   .use("/", require("./routes"));
